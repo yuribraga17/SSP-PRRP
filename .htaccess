@@ -1,0 +1,19 @@
+Options All -Indexes
+
+DirectoryIndex index.php
+
+ErrorDocument 401 https://ssp.progressive-roleplay.com/dashboard/errors/error404.php
+ErrorDocument 402 https://ssp.progressive-roleplay.com/dashboard/errors/error404.php
+ErrorDocument 403 https://ssp.progressive-roleplay.com/dashboard/errors/error404.php
+ErrorDocument 404 https://ssp.progressive-roleplay.com/dashboard/errors/error404.php
+ErrorDocument 500 https://ssp.progressive-roleplay.com/dashboard/errors/error404.php
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+php_flag log_errors on
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php81___lsphp .php .php8 .phtml
+</IfModule>
