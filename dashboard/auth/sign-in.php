@@ -22,7 +22,9 @@ else if (isset($_POST["login_user"])) {
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>SP:RP - Sistema SSP</title>
+    <title>PR:RP | Secretária de Segurança Pública</title>
+    <meta name="keywords" content="SSP, Progressive, Roleplay, GTA 5, FiveM, GTA RP, gta, rp, grota, prrp, pr:rp, pr-rp, samp, mta, sa-mp"/> <!-- Palavras chaves de busca -->
+    <meta name="author" content="Yuri Braga"/> <!-- criador do site -->
     <!-- Favicon -->
     <link rel="shortcut icon" href="../../assets/images/ssp.png"/>
     <link rel="stylesheet" href="../../assets/css/libs.min.css">
